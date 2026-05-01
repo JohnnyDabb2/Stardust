@@ -155,28 +155,13 @@
                                                 Style="{StaticResource BaseTextBlockStyle}"    
                                                 Foreground="White"
                                                 TextAlignment="Left" TextTrimming="CharacterEllipsis"
-                                                FontWeight="Medium"
+                                                FontWeight="SemiBold"
                                                 VerticalAlignment="Center"
                                                 Width="{Settings GridItemWidth}"
                                                 Padding="2,8,2,3"
                                                 Visibility="{Settings ShowNamesUnderCovers}" />
                             </Border>
 
-                            <DockPanel Width="{Settings GridItemWidth}"
-                                        Visibility="{DynamicResource GridViewCoverSubtitleVisibility}">
-                                <TextBlock Text="&#xEEDC;" FontSize="{DynamicResource FontSizeSmall}"
-                                            FontFamily="{StaticResource FontIcoFont}"
-                                            TextAlignment="Left" VerticalAlignment="Center"
-                                            Padding="2,4,2,5" Margin="0,0,0,-2"
-                                            Foreground="{DynamicResource GridViewCoverSubtitleBrush}" />
-                                <TextBlock Text="{Binding Playtime, Mode=OneWay, Converter={StaticResource PlayTimeToStringConverter}, IsAsync=True}"
-                                            Foreground="{DynamicResource GridViewCoverSubtitleBrush}"
-                                            FontSize="{DynamicResource FontSizeSmall}"
-                                            Style="{DynamicResource BaseTextBlockStyle}"                                                                   
-                                            TextAlignment="Left" TextTrimming="CharacterEllipsis"
-                                            VerticalAlignment="Center"
-                                            Padding="3,4,2,2" />
-                            </DockPanel>
                             <DockPanel Width="{Settings GridItemWidth}"
                                         Tag="{DynamicResource GridViewCoverCompStatusSubtitleVisibility}">
                                 <DockPanel.Style>
